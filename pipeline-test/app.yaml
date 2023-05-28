@@ -17,6 +17,6 @@ spec:
     spec:
       containers:
       - name: pipeline-test
-        image: {{ $BUILD }}
+        image: random
         ports:
         - containerPort: 3000
