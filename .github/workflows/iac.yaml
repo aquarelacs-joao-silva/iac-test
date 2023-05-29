@@ -24,8 +24,8 @@ jobs:
         valueFile: '../../pipeline-test/app.yaml'
         propertyPath: 'spec.template.spec.containers[0].image'
         value: ${{ inputs.image }}
-        branch: deployment/${{ inputs.image }}
-        targetBranch: master
+        branch: main/${{ inputs.image }}
+        targetBranch: main
         createPR: true
         message: 'Update Image Version to ${{ inputs.image }}' 
         
