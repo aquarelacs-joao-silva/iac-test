@@ -23,7 +23,10 @@ jobs:
       with:
         valueFile: '../../pipeline-test/app.yaml'
         propertyPath: 'spec.template.spec.containers[0].image'
-        value: {{ inputs.image }}
-        commitChange: false
+        value: ${{ inputs.image }}
+        branch: deployment/${{ inputs.image }}
+        targetBranch: master
+        createPR: true
+        message: 'Update Image Version to ${{ inputs.image }}' 
         
         
