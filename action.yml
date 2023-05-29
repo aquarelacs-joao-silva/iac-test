@@ -16,7 +16,7 @@ runs:
     - name: Update values.yaml
       uses: fjogeleit/yaml-update-action@main
       with:
-        valueFile: 'pipeline-test/app.yaml'
+        valueFile: './pipeline-test/app.yaml'
         propertyPath: 'spec.template.spec.containers[0].image'
         value: ${{ inputs.image }}
         branch: main/${{ inputs.image }}
