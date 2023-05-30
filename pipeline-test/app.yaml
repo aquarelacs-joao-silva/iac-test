@@ -2,7 +2,7 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: pipeline-test
-  namespace: pipeline
+  namespace: pipeline-test
   labels:
     app: pipeline-test
 spec:
