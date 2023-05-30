@@ -8,3 +8,6 @@ images:
 - name: joaoaquarela.azurecr.io/pipeline-test
   newName: joaoaquarela.azurecr.io/pipeline-test
   newTag: v3.3
+- name: random
+  newName: joaoaquarela.azurecr.io/pipeline-test
+  newTag: v3.4
