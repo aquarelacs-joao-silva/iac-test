@@ -20,3 +20,5 @@ spec:
         image: joaoaquarela.azurecr.io/pipeline-test:v1.0
         ports:
         - containerPort: 3000
+      imagePullSecrets:
+        - name: acr-registry
