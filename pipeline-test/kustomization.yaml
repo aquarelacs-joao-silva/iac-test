@@ -6,4 +6,5 @@ resources:
 - app_svc.yaml
 images:
 - name: joaoaquarela.azurecr.io/pipeline-test
-  newTag: v3.2
+  newName: joaoaquarela.azurecr.io/pipeline-test
+  newTag: v3.3
