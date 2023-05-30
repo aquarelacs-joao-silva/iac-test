@@ -17,6 +17,6 @@ spec:
     spec:
       containers:
       - name: pipeline-test
-        image: random
+        image: joaoaquarela.azurecr.io/pipeline-test:v1.0
         ports:
         - containerPort: 3000
